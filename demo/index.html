@@ -1,0 +1,22 @@
+<html ng-app="MyApp">
+    <head>
+        <title>Exemplo de Formulário</title>
+        <meta charset="utf-8">
+        <link href="assets/normalize.css" rel="stylesheet">
+        <link href="assets/skeleton.css" rel="stylesheet">
+        <link href="assets/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div ng-controller="ExampleController">
+              <h2>Template: <code>{{template.name}}</code></h2>
+              <select class="u-full-width" ng-model="template" ng-options="t.name for t in templates"></select>
+              <hr/>
+              <div ng-include="template.url"></div>
+            </div>
+        </div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="../dist/angularform.min.js"></script>
+    </body>
+</html>

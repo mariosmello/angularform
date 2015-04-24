@@ -1,0 +1,28 @@
+<div ng-controller="FormCtrl as formCtrl">
+    <form ng-submit="formCtrl.submit('data/complete.json')">
+        <div class="alert alert-success" ng-show="formCtrl.formMessage.success">
+          {{ formCtrl.formMessage.success }}
+        </div>
+        <div class="alert alert-warning" ng-show="formCtrl.formMessage.error">
+          {{ formCtrl.formMessage.error }}
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <label for="name">Nome</label>
+                <input type="text" class="u-full-width" placeholder="Nome" id="name" ng-model="formCtrl.form.name" ng-class="{'error': formCtrl.formError.name}" />
+                <div class="alert alert-error" ng-show="formCtrl.formError.name">
+                    {{ formCtrl.formError.name }}
+                </div>
+            </div>
+            <div class="six columns">
+                <label for="name">E-mail</label>
+                <input type="text" class="u-full-width" placeholder="E-mail" id="email" ng-model="formCtrl.form.email" ng-class="{'error': formCtrl.formError.email}" />
+                <div class="alert alert-error" ng-show="formCtrl.formError.email">
+                    {{ formCtrl.formError.email }}
+                </div>
+            </div>
+        </div>
+        <input ng-show="!formCtrl.loading" class="button-primary" type="submit" value="Enviar" />
+        <span ng-show="formCtrl.loading">Loading</span>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+{
+    "error":
+        {
+            "name":"Por favor preencha o campo nome",
+            "email":"E-mail inválido"
+        },
+    "errorMessage":
+        {
+            "message":"Mensagem de erro geral"
+        },
+    "successMessage":
+        {
+            "message":"Formulário cadastrado com sucesso"
+        }
+}

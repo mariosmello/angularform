@@ -1,0 +1,9 @@
+{
+    "error": {},
+    "errorMessage": {},
+    "successMessage": {},
+    "redirect":
+        {
+            "url":"http://google.com"
+        }
+}

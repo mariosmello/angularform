@@ -1,0 +1,25 @@
+{
+  "name": "angularform",
+  "homepage": "https://github.com/mariosmello/angularform",
+  "authors": [
+    "Mário mello <mario@dindigital.com>"
+  ],
+  "description": "Serviço em angular para facilitar o processo de envio de formulários em ajax e exibição do retorno",
+  "main": "dist/angularform.min.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "form",
+    "angular",
+    "service"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "error":
+        {
+            "name":"Por favor preencha o campo nome",
+            "email":"E-mail inválido"
+        },
+    "errorMessage": {
+        "message":"Erro no formulário"
+    },
+    "successMessage": {}
+}
